@@ -27,8 +27,6 @@ class _HomescreenState extends State<Homescreen> {
     print(resonse.body);
 
     if (resonse.statusCode == 200) {
-      print(resonse.statusCode);
-      print(resonse.body);
       PostModel postModel = PostModel.fromJson(data);
       print(postModel.firstName);
       return postModel;
